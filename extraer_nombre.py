@@ -51,7 +51,7 @@ for index, row in df_entrada.iterrows():
         wait.until(EC.presence_of_element_located((By.ID, "download")))
         time.sleep(4)
 
-        # Extracción vía JavaScript (El método que funcionó)
+        # Extracción vía JavaScript
         try:
             script_get_val = "return Array.from(document.querySelectorAll('td')).find(el => el.textContent.includes(arguments[0])).nextElementSibling.innerText;"
 
